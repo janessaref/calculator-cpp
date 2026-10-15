@@ -47,6 +47,7 @@ g++ -std=c++17 -Wall -Wextra -o calculator calculator.cpp
 Below is a GIF of the application.
 
 ![Calculator Gif Demo](./assets/calculatorcpp.gif)
+[Watch Full Demo Video Here](https://app.screencastify.com/watch/3Vh5FJXGQmFm0rthDClX)
 
 
 ## Code Snippet
