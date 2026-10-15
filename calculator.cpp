@@ -43,7 +43,7 @@ double Calculator::multiply() {
     result = num1 * num2;
     return result;
 }
-// divides the first operand by the second and updates the result; return false if dividing by zero, true otherwise
+// divides the first operand by the second and updates the result; returns false if dividing by zero, true otherwise
 bool Calculator::divide() {
     // if the second operand is 0, displays an error and returns false without dividing
     if (num2 == 0) {
