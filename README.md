@@ -36,7 +36,13 @@ This application was a final project for COMSC-165 class at Diablo Valley Colleg
 
 ## Code Snippet
 
+
 ## Future Work
+
+* Add more operations such as square root, percentage, and pi
+* Add trigonometric functions, moving towards a scientific calculator
+* Let the user type a full expression to evaluate, for example: (5+2)*3^2
+* Graph or visually show equations
 
 ## Authors
 
