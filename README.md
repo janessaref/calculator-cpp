@@ -6,6 +6,7 @@
 * [Usage](#Usage)
 * [GIFs of Project](#gifs-of-project)
 * [Code Snippet](#code-snippet)
+* [Future Work](#future-work)
 * [Authors](#authors)
 
 ## Description
@@ -25,10 +26,17 @@ This application was a final project for COMSC-165 class at Diablo Valley Colleg
 
 ## Usage
 
+1. Enter a first number.
+2. Choose an operation: +, -, *, or /.
+3. Enter a second number. The program then prints the equation and current result. The current result becomes the first number for the next operation.
+4. At the operations menu, type "r" to reset or "q" to quit.
+
 ## GIFs of Project
 
 
 ## Code Snippet
+
+## Future Work
 
 ## Authors
 
