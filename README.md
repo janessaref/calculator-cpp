@@ -16,6 +16,13 @@ This application was a final project for COMSC-165 class at Diablo Valley Colleg
 
 ## Features
 
+ * Basic operations include addition, subtraction, multiplication and division on whole or decimal numbers
+ * Running total: the result of each operation becomes the first number of the next one
+ * Reset (r) to return and set the calculator to zero and start over
+ * Quit (q) to end the application
+ * Input Validation: non-numeric input is rejected, prompts "Invalid Input" and to enter a valid number
+ * Division by zero: prints "Undefined" and resets the calculator 
+
 ## Usage
 
 ## GIFs of Project
