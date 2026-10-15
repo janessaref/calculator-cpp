@@ -9,11 +9,11 @@ class Calculator {
         double add();
         double subtract();
         double multiply();
-        double divide();
+        bool divide();
         double getResult();
         double validateNum();
         void reset();
-        void printCalculation(char operation);
+        void printCalculation(char operation, bool valid);
     private:
         // Private variables to store the operands and the result of calculation
         double result;
@@ -44,14 +44,15 @@ double Calculator::multiply() {
     return result;
 }
 // divides the first operand by the second, updates the result, and returns it
-double Calculator::divide() {
+bool Calculator::divide() {
     // if the second operand is 0, displays an error and return the last saved result
     if (num2 == 0) {
         cout << "Error! Can't divide by zero." << endl;
-        return result;
+        result = num1;
+        return false;
     }
     result = num1 / num2;
-    return result;
+    return true;
 } 
 // validates the numbers from user input to ensure it's a valid number
 double Calculator::validateNum() {
@@ -82,8 +83,15 @@ void Calculator::reset() {
     cout << "Calculator reset" << endl;
 }
 // displays the operation and the result to the user
-void Calculator::printCalculation(char operation) {
-    cout << num1 << " " << operation << " " << num2 << " " << "= " << result << endl;
+void Calculator::printCalculation(char operation, bool valid) {
+    cout << num1 << " " << operation << " " << num2 << " " << "= ";
+
+    if (valid) {
+        cout << result << endl;
+    }
+    else {
+        cout << "Undefined" << endl;
+    }
 }
 
 int main() {
@@ -118,6 +126,7 @@ int main() {
         else if (operation == 'r') {
             // calls the reset function to set all variables back to zero, take in the first number, validate it and save
             calc.reset();
+            cout << "----------------------------" << endl;
             cout << "Enter a number: ";
             x = calc.validateNum();
             calc.setNum1(x);
@@ -134,6 +143,7 @@ int main() {
         cout << "Enter a number: ";
         y = calc.validateNum();
         calc.setNum2(y);
+        bool valid = true;
 
         // executes the chosen operation based on user input
         switch (operation) {
@@ -147,13 +157,26 @@ int main() {
                 calc.multiply();
                 break;
             case '/':
-                calc.divide();
+                valid = calc.divide();
                 break;
         } 
 
-        // prints the equation used to the user
-        calc.printCalculation(operation);
+        // prints the valid equation used to the user, if valid is false prints "Undefined"
+        calc.printCalculation(operation, valid);
+
+        // if result is undefined, reset the calculator
+        if (!valid) {
+            cout << "----------------------------" << endl;
+            calc.reset();
+            cout << "----------------------------" << endl;
+            cout << "Enter a number: ";
+            x = calc.validateNum();
+            calc.setNum1(x);
+            continue;
+        }
+
         // sets the result as the first operand for continued calculations
+        // Runs if operation is valid
         calc.setNum1(calc.getResult());
         cout << "----------------------------" << endl;
         // displays the current result
