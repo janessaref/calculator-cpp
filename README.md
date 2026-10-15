@@ -27,25 +27,24 @@ This application was a final project for COMSC-165 class at Diablo Valley Colleg
 ## Usage
 
 1. Enter a first number.
-2. Choose an operation: +, -, *, or /.
+2. Choose an operation: `+`, `-`, `*`, or `/`.
 3. Enter a second number. The program then prints the equation and current result. The current result becomes the first number for the next operation.
-4. At the operations menu, type "r" to reset or "q" to quit.
+4. At the operations menu, type `r` to reset or `q` to quit.
 
 ## GIFs of Project
 
 Below is a GIF of the application.
 
-![Gif](./assets/calculatorcpp.gif)
+![Calculator Gif Demo](./assets/calculatorcpp.gif)
 
 
 ## Code Snippet
 
-In this code snippet, this handles the division. If the second operand is zero, it prints the error message and returns false, and the program prints "Undefined" as the result and resets the calculator. Otherwise, it divides the two inputs, sets the result, and returns true. 
+In this code snippet, the function handles the division. If the second operand is zero, it prints the error message and returns false, and the program prints "Undefined" as the result and resets the calculator. Otherwise, it divides the two inputs, sets the result, and returns true. 
 
 ```cpp
 // divides the first operand by the second and updates the result; returns false if dividing by zero, true otherwise
 bool Calculator::divide() {
-
     // if the second operand is 0, displays an error and returns false without dividing
     if (num2 == 0) {
         cout << "Error! Can't divide by zero." << endl;

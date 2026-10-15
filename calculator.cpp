@@ -74,7 +74,7 @@ double Calculator::validateNum() {
 double Calculator::getResult() {
     return result;
 }
-// resets the calculator variables to its intial state
+// resets the calculator variables to its initial state
 void Calculator::reset() {
     num1 = 0;
     num2 = 0;
@@ -138,7 +138,7 @@ int main() {
             continue;
         }
 
-        // prompts the user to input the second operand, validates the oeprand and save
+        // prompts the user to input the second operand, validates the operand and save
         cout << "Enter a number: ";
         y = calc.validateNum();
         calc.setNum2(y);
