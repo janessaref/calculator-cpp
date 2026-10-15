@@ -3,6 +3,7 @@
 ## Table of Contents
 * [Description](#description)
 * [Features](#features)
+* [Build and Run](#build-and-run)
 * [Usage](#usage)
 * [GIFs of Project](#gifs-of-project)
 * [Code Snippet](#code-snippet)
@@ -24,6 +25,15 @@ This application was a final project for COMSC-165 class at Diablo Valley Colleg
  * Input validation: non-numeric input is rejected and the program prompts "Invalid input. Please enter a valid number: "
  * Operation validation: any menu choice other than `+`, `-`, `*`, `/`, `r`, or `q` is rejected and the program prompts "Invalid operation. Please try again."
  * Division by zero: prints "Undefined" and resets the calculator 
+
+## Build and Run
+
+A C++ compiler such as `g++` is needed. From the project folder, compile and run the program:
+
+```bash
+g++ -std=c++17 -Wall -Wextra -o calculator calculator.cpp
+./calculator
+```
 
 ## Usage
 
