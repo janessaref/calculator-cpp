@@ -33,6 +33,10 @@ This application was a final project for COMSC-165 class at Diablo Valley Colleg
 
 ## GIFs of Project
 
+Below is a GIF of the application.
+
+![Gif](./assets/calculatorcpp.gif)
+
 
 ## Code Snippet
 
