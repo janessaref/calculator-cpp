@@ -3,6 +3,7 @@ using namespace std;
 
 class Calculator {
     public:
+        Calculator() : result(0), num1(0), num2(0) {}
         void setNum1(double x);
         void setNum2(double y);
         double add();
