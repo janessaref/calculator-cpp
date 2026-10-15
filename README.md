@@ -21,7 +21,8 @@ This application was a final project for COMSC-165 class at Diablo Valley Colleg
  * Running total: the result of each operation becomes the first number of the next one
  * Reset (r) to return and set the calculator to zero and start over
  * Quit (q) to end the application
- * Input Validation: non-numeric input is rejected, prompts "Invalid input" and to enter a valid number
+ * Input validation: non-numeric input is rejected and the program prompts "Invalid input. Please enter a valid number: "
+ * Operation validation: any menu choice other than `+`, `-`, `*`, `/`, `r`, or `q` is rejected and the program prompts "Invalid operation. Please try again."
  * Division by zero: prints "Undefined" and resets the calculator 
 
 ## Usage
